@@ -5,12 +5,12 @@ body {
 header {
     background-color: black;
     width: 100%;
-    height: 50px;
+    height: 52px;
     display: flex;
 }
 
 .menu {
-    height: 50px;
+    height: 52px;
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    height: 50px;
+    height: 52px;
 }
 
 .menuContents {
@@ -50,6 +50,11 @@ header {
     
     header {
         justify-content: center;
+        height: 63px;
+    }
+    
+    .logo img {
+        height: 63px;
     }
 }
 
