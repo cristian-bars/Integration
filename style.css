@@ -62,7 +62,7 @@ header {
     font-weight: bold;
 }
 
-.sort {
+.sort, .change {
     color: grey;
     text-decoration: underline;
 }
@@ -78,6 +78,8 @@ header {
 
 .cardsList ul {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardListIcon img {

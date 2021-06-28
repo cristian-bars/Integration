@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Canada sports Betting</title>
 </head>
 <body>
@@ -32,6 +33,7 @@
             <div class="title">Best sports betting sites</div>
         </div>
         <div class="sort">Sort Alphabetically</div>
+        <div class="change">Change view</div>
         
         <div class="cardsList">
             <ul>
@@ -158,6 +160,21 @@
     </div>
     
     
-    
+    <script>
+        $(document).ready(function(){
+            $(".change").click(function(){
+                if($(".cardsList ul").hasClass("column")){
+                    $(".cardsList ul").css("flex-direction","column");
+                    $(".cardListItem").css("flex-direction","row");
+                    $(".cardsList ul").removeClass("column");
+                }else{
+                    $(".cardsList ul").css("flex-direction","row");
+                    $(".cardListItem").css("flex-direction","column");
+                    $(".cardsList ul").addClass("column");
+                }
+                
+            });
+        });
+    </script>
 </body>
 </html>
