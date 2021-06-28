@@ -43,23 +43,75 @@ header {
     text-transform: uppercase;
 }
 
-.content {
+.titleContent {
     display: flex;
     margin: 0 auto;
     width: 100%;
     justify-content: center;
 }
 
-.content img {
+.titleContent img {
     width: 18px;
     margin: 30px 20px;
 }
 
-.content .title {
+.titleContent .title {
     font-size: 14px;
     text-transform: uppercase;
     margin: 30px 0;
     font-weight: bold;
+}
+
+.sort {
+    color: grey;
+    text-decoration: underline;
+}
+    
+.cardListItem {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cardsList ul {
+    padding: 10px;
+}
+
+.cardListIcon img {
+    width: 80px;
+}
+
+.review {
+    color: grey;
+    text-decoration: underline;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    color: #2A42ED;
+}
+
+.priceNumber {
+    font-weight: bold;
+}
+
+.arrow {
+    background-color: #F44337;
+    width: 40px;
+    height: 79px;
+    border-radius: 0 10px 10px 0;
+}
+
+.arrow img {
+    width: 10px;
+    position: relative;
+    top: 40%;
+    left: 35%;
+    border-radius: 0 5px 5px 0;
 }
 
 @media (min-width: 600px) {
@@ -76,16 +128,43 @@ header {
         height: 63px;
     }
     
-    .content img {
+    .titleContent img {
         width: 44px;
         margin: 30px 20px;
     }
     
-    .content .title {
+    .titleContent .title {
         font-size: 34px;
         text-transform: uppercase;
         margin: 30px 0;
         font-weight: bold;
+    }
+    
+    .cardListItem {
+        justify-content: space-around;
+    }
+    
+    .price {
+        flex-direction: row;
+    }
+    
+    .arrow {
+        width: 140px;
+        height: 36px;
+        margin: 12px;
+    }
+    
+    .arrowTitle {
+        display: inline-block;
+        position: relative;
+        top: 25%;
+        margin-left: 20px;
+        color: #fff;
+    }
+    
+    .arrow img {
+        top: 30%;
+        left: 10%;
     }
 }
 
