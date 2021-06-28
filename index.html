@@ -33,7 +33,7 @@
             <div class="title">Best sports betting sites</div>
         </div>
         <div class="sort">Sort Alphabetically</div>
-        <div class="change">Change view</div>
+        <div class="change only_dsk">Change view</div>
         
         <div class="cardsList">
             <ul>
@@ -169,6 +169,7 @@
                     $(".cardsList ul").removeClass("column");
                 }else{
                     $(".cardsList ul").css("flex-direction","row");
+                    $(".cardsList ul").css("justify-content","space-around");
                     $(".cardListItem").css("flex-direction","column");
                     $(".cardsList ul").addClass("column");
                 }
