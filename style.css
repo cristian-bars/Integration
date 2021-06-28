@@ -65,6 +65,7 @@ header {
 .sort, .change {
     color: grey;
     text-decoration: underline;
+    cursor: pointer;
 }
     
 .cardListItem {
@@ -75,6 +76,7 @@ header {
     justify-content: space-between;
     margin: 10px 0;
     transition: transform 1s;
+    cursor: pointer;
 }
 
 .cardListItem:hover {
